@@ -1,0 +1,208 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 768px) {
+  body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: hsl(36, 100%, 99%);
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: hsl(236, 13%, 42%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(36, 100%, 99%);
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.hamburger {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  background-color: hsl(36, 100%, 99%);
+}
+/* Menu styles */
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%); /* Initially hidden */
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu.active {
+  transform: translateX(0); /* Show menu */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40%;
+}
+
+.menu li {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  padding-top: 10%;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Close button styles */
+.close-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+/* content*/
+.content span p{
+  line-height: 30px;
+  font-size: 15px;
+  width: 100%;
+}
+
+
+.content h1 {
+  font-weight: 800;
+  font-size: 40px;
+  color: hsl(240, 100%, 5%);
+  width: 88%;
+}
+
+.content button {
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  height: 47px;
+  width: 185px;
+  color: hsl(36, 100%, 99%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px,5px;
+  font-weight: 700;
+  font-size:13px ;
+  margin-top: 32px;
+}
+.content button span{
+  padding-left: 10px;
+}
+/*newSection*/
+.newSection{
+  background-color:hsl(240, 100%, 5%);
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+  color: hsl(36, 100%, 99%);
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 63px;
+  margin-bottom: 63px;
+  overflow: hidden;
+}
+.newSection h2{
+  font-size: 20px;
+  color: hsl(36, 100%, 99%);
+  
+}
+.newSection div{
+border-bottom: .05px solid #ccc;
+padding-bottom: 30px;
+padding-top: 15px;
+color: hsl(233, 8%, 79%);
+}
+.newSection span h2{
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+  font-size: 30px;
+}
+.newSection div p{
+  line-height: 26px;
+}
+.newSection .number3{
+  border: none;
+}
+
+.articleSection img {
+  height: 150px;
+  width: 100px;
+}
+.articleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.retroPc,
+.laptops,
+.gaming {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.retroPc p,
+.laptops p,
+.gaming p{
+padding-bottom: 25px;
+line-height: 30px;
+}
+.retroPc div,
+.laptops div,
+.gaming div {
+  margin-left: 25px;
+}
+.retroPc div,
+.laptops div{
+  margin-bottom: -15px;
+}
+.retroPc h2,
+.laptops h2,
+.gaming h2{
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+  font-size: 33px;
+  margin-bottom: -10px;
+}
+.retroPc h3,
+.laptops h3,
+.gaming h3{
+  color: hsl(240, 100%, 5%) ;
+  font-weight: 800;
+}
