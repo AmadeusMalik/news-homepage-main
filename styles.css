@@ -1,6 +1,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .attribution a {
@@ -72,12 +73,17 @@ body {
 .menu li {
   padding: 0.5rem 1rem;
   font-weight: 700;
+  font-size: 17px;
   padding-top: 10%;
 }
 
 .menu li a {
   text-decoration: none;
   color: #333;
+  cursor: pointer;
+}
+.menu li a:hover{
+  color: hsl(5, 85%, 63%);
 }
 
 /* Close button styles */
@@ -91,12 +97,11 @@ body {
   right: 1rem;
 }
 /* content*/
-.content span p{
+.content span p {
   line-height: 30px;
   font-size: 15px;
   width: 100%;
 }
-
 
 .content h1 {
   font-weight: 800;
@@ -114,20 +119,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px,5px;
+  padding: 5px, 5px;
   font-weight: 700;
-  font-size:13px ;
+  font-size: 13px;
   margin-top: 32px;
+  cursor: pointer;
 }
-.content button span{
+.content button span {
   padding-left: 10px;
 }
+.content button:hover{
+  background-color: hsl(240, 100%, 5%);
+}
 /*newSection*/
-.newSection{
-  background-color:hsl(240, 100%, 5%);
+.newSection {
+  background-color: hsl(240, 100%, 5%);
   display: flex;
   flex-direction: column;
-justify-content: space-between;
+  justify-content: space-between;
   color: hsl(36, 100%, 99%);
   height: 100%;
   padding-left: 16px;
@@ -136,26 +145,31 @@ justify-content: space-between;
   margin-bottom: 63px;
   overflow: hidden;
 }
-.newSection h2{
+.newSection h2 {
   font-size: 20px;
   color: hsl(36, 100%, 99%);
-  
+  cursor: pointer;
+  width: fit-content;
 }
-.newSection div{
-border-bottom: .05px solid #ccc;
-padding-bottom: 30px;
-padding-top: 15px;
-color: hsl(233, 8%, 79%);
+.newSection h2:hover{
+  color: hsl(35, 77%, 62%);
 }
-.newSection span h2{
+.newSection div {
+  border-bottom: 0.05px solid #ccc;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  color: hsl(233, 8%, 79%);
+}
+.newSection span h2 {
   color: hsl(35, 77%, 62%);
   font-weight: 700;
   font-size: 30px;
 }
-.newSection div p{
+
+.newSection div p {
   line-height: 26px;
 }
-.newSection .number3{
+.newSection .number3 {
   border: none;
 }
 
@@ -167,7 +181,6 @@ color: hsl(233, 8%, 79%);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .retroPc,
@@ -179,9 +192,9 @@ color: hsl(233, 8%, 79%);
 }
 .retroPc p,
 .laptops p,
-.gaming p{
-padding-bottom: 25px;
-line-height: 30px;
+.gaming p {
+  padding-bottom: 25px;
+  line-height: 30px;
 }
 .retroPc div,
 .laptops div,
@@ -189,12 +202,12 @@ line-height: 30px;
   margin-left: 25px;
 }
 .retroPc div,
-.laptops div{
+.laptops div {
   margin-bottom: -15px;
 }
 .retroPc h2,
 .laptops h2,
-.gaming h2{
+.gaming h2 {
   color: hsl(233, 8%, 79%);
   font-weight: 700;
   font-size: 33px;
@@ -202,7 +215,14 @@ line-height: 30px;
 }
 .retroPc h3,
 .laptops h3,
-.gaming h3{
-  color: hsl(240, 100%, 5%) ;
+.gaming h3 {
+  color: hsl(240, 100%, 5%);
   font-weight: 800;
+  width: fit-content ;
+}
+.retroPc h3:hover,
+.laptops h3:hover,
+.gaming h3:hover{
+color: hsl(35, 77%, 62%);
+cursor: pointer;
 }
